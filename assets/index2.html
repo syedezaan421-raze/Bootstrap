@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<style>
+    .navbar {
+        background-color: transparent;
+    }
+    
+    .logo {
+        color: white;
+        font-weight: 700;
+    }
+    
+    .nav-link {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .card {
+        border: none;
+    }
+    
+    .card .btn {
+        background-color: rgb(23, 104, 155);
+        border: none;
+        border-radius: 50%;
+        margin-left: 170px;
+    }
+    
+    .card img {
+        height: 250px;
+        width: 270px;
+        border-radius: 10%;
+        margin-left: 60px;
+    }
+    
+    .rectangle {
+        box-shadow: 1px 0px 9px 1px grey;
+    }
+    
+    .herobg {
+        height: 75vh;
+        background-image: url('hero.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .custom-shape-divider-bottom-1779447285 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1779447285 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 67px;
+    }
+    
+    .custom-shape-divider-bottom-1779447285 .shape-fill {
+        fill: #FFFFFF;
+    }
+</style>
+
+<body>
+    <div class="herobg">
+        <nav class="navbar hero2 navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">TechHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Signup</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-moon"></i>Theme
+          </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dark Theme</a></li>
+                                <li><a class="dropdown-item" href="#">Light theme</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid  hero   hero2">
+            <div class="row">
+                <div class="col-lg-5 ms-lg-5 p-lg-5 mt-5 col-md-12 col-sm-12">
+                    <h1 class=" text-white fw-semibold">We Collects High Quality Leads</h1>
+                    <p class=" text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius impedit modi iure cumque consequatur corporis quas vero accusantium ipsum quod.</p>
+                    <button type="button" class="btn btn-primary">
+                    Get started
+                </button>
+                </div>
+                <div class="col-lg-5 p-lg-5 ms-lg-auto mt-5">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <video autoplay muted loop src="tech animation.mp4" width="360px"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1779447285">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container align-items-center justify-content-center">
+        <h1 class=" text-center mt-5">What We Will Do For
+            <br> Your Business</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-8 mt-4">
+                <div class="card" style="width: 21rem;">
+                    <img src="phone.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum ..</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card" style="width: 21rem;">
+                    <img src="markiting.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum.</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card" style="width: 21rem;">
+                    <img src="SEO.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum .</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5  ">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-3">
+                <img src="mobile.gif" width="370px" height="280px" class="mobile-fluid" alt="mobile">
+            </div>
+            <div class="col-lg-5 mt-5">
+                <h1 class=" ">Step To Build A Successfull Digital Products</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius impedit modi iure cumque consequatur corporis quas vero accusantium ipsum quod.</p>
+                <button type="button" class="btn btn-primary">
+                    Get started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="h1 ">
+            <h1 class=" mt-5 text-center ">Generating New Costumer Via <br> Online Mode</h1>
+        </div>
+
+        <div class="row mt-5 ">
+            <div class="col-lg-6 rectangle d-flex flex-row">
+                <div class=" mt-3"><img src="mobile.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 rectangle d-flex flex-row">
+                <div class=" mt-3"><img src="SEO.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 rectangle d-flex flex-row">
+                <div class="mt-3"><img src="SEO.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5    rectangle d-flex flex-row">
+                <div class="mt-3"><img src="mobile.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="tech1.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

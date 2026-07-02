@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub | Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<style>
+    .body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    
+    .foot-link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navbar {
+        background-color: transparent;
+    }
+    
+    .logo {
+        color: white;
+        font-weight: 700;
+    }
+    
+    .nav-link {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .card1 {
+        border: none;
+    }
+    
+    .card1 .btn {
+        background-color: rgb(23, 104, 155);
+        border: none;
+        border-radius: 50%;
+        margin-left: 170px;
+    }
+    
+    .card1 img {
+        height: 250px;
+        width: 270px;
+        border-radius: 10%;
+        margin-left: 60px;
+    }
+    
+    .rectangle {
+        box-shadow: 1px 0px 9px 1px grey;
+    }
+    
+    .herobg {
+        height: 85vh;
+        background-image: url('hero.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .custom-shape-divider-bottom-1779447285 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1779447285 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 67px;
+        margin-bottom: -1px;
+    }
+    
+    .custom-shape-divider-bottom-1779447285 .shape-fill {
+        fill: #FFFFFF;
+    }
+    
+    .custom-shape-divider-bottom-1779447285 {
+        bottom: -1px;
+    }
+    
+    .card2 {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .card i {
+        color: purple;
+    }
+    
+    .heroslider {
+        background-color: black;
+        height: 100vh;
+    }
+    
+    .herocont {
+        background-color: black;
+        height: 80vh;
+    }
+    
+    form label {
+        color: white;
+        font-weight: 600;
+    }
+    
+    .heropgm {
+        background-color: black;
+    }
+    
+    @media (max-width:900px) {
+        .heroslider {
+            height: 150vh;
+        }
+        .heropgm {
+            width: 390px;
+        }
+    }
+    
+    .cardbg img {
+        width: 330px;
+        margin: 10px;
+    }
+    
+    .carousel {
+        height: 70vh;
+    }
+    
+    .footer {
+        background-color: rgb(45, 43, 43);
+    }
+    
+    .hero video {
+        border-radius: 10%;
+    }
+    
+    #name {
+        color: purple;
+    }
+</style>
+
+<body>
+    <div class="herobg">
+        <nav class="navbar hero2 navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">TechHub</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Signup</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-moon"></i>Theme
+          </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="black()">Dark Theme</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="white()">Light theme</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid  hero   hero2">
+            <div class="row">
+                <div class="col-lg-5 ms-lg-5 p-lg-5 mt-5 col-md-12 col-sm-12">
+                    <h1 class=" text-white fw-semibold">We Collects High Quality Leads</h1>
+                    <p class=" text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius impedit modi iure cumque consequatur corporis quas vero accusantium ipsum quod.</p>
+                    <button type="button" class="btn btn-primary">
+                    Get started
+                </button>
+                </div>
+                <div class="col-lg-5 p-lg-5 ms-lg-auto mt-5">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <video autoplay muted loop src="assets/tech animation.mp4" width="380px"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1779447285">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container align-items-center justify-content-center">
+        <h1 class=" text-center mt-5">What We Will Do For
+            <br> Your Business</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-8 mt-4">
+                <div class="card1" style="width: 21rem;">
+                    <img src="assets/phone.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum ..</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card1" style="width: 21rem;">
+                    <img src="assets/markiting.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum.</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card1" style="width: 21rem;">
+                    <img src="assets/SEO.gif" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-lg-3 mt-2">Link Building </h5>
+                        <p class="card-text text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem earum .</p>
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5  ">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-3">
+                <img src="assets/mobile.gif" width="370px" height="280px" class="mobile-fluid" alt="mobile">
+            </div>
+            <div class="col-lg-5 mt-5">
+                <h1 class=" ">Step To Build A Successfull Digital Products</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius impedit modi iure cumque consequatur corporis quas vero accusantium ipsum quod.</p>
+                <button type="button" class="btn btn-primary">
+                    Get started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="h1 ">
+            <h1 class=" mt-5 text-center ">Generating New Costumer Via <br> Online Mode</h1>
+        </div>
+
+        <div class="row mt-5 ">
+            <div class="col-lg-6 rectangle d-flex flex-row">
+                <div class=" mt-3"><img src="assets/mobile.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 rectangle d-flex flex-row">
+                <div class=" mt-3"><img src="assets/SEO.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 rectangle d-flex flex-row">
+                <div class="mt-3"><img src="assets/SEO.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5    rectangle d-flex flex-row">
+                <div class="mt-3"><img src="assets/ mobile.gif" width="150px" alt=""></div>
+                <div class=" ms-3">
+                    <h4 class=" mt-3 mb-3">Social media advertising</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa officiis distinctio a quos reiciendis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid heroslider mt-5">
+        <h2 class=" p-5 text-white text-center ">What Clients Say <br> About Us</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active mt">
+                    <div class="row ms-lg-5 ms-5 p-lg-5">
+                        <div class="col-lg-3 col-sm-6 ms-sm-5 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech1.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5 ">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech2.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ms-lg-5 p-lg-5">
+                        <div class="col-lg-3 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech1.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5 ">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech2.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ms-lg-5 p-lg-5">
+                        <div class="col-lg-3 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech1.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5 ">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech2.jfif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ms-lg-5 p-lg-5">
+                            <div class="card card2" style="width: 18rem;">
+                                <img src="assets/tech3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-white">Card title</h5>
+                                    <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <div class=" ms-5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class=" mt-5 text-center">Tips and Tricks From <br> Our Export</h2>
+
+        <div class="row mt-lg-5">
+            <div class="col-lg-4 mt-5  col-sm-6">
+                <div class="card cardbg " style="width: 22rem;">
+                    <img src="assets/tech6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class=" d-flex flex-row">
+                            <i class="fa-solid fa-book-open text-black mb-4"></i>:500
+                            <p class="ms-auto">Feb 21,2026</p>
+                        </div>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card cardbg " style="width: 22rem;">
+                    <img src="assets/tech5.jfif" height="185px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class=" d-flex flex-row">
+                            <i class="fa-solid fa-book-open text-black mb-4"></i>:500
+                            <p class="ms-auto">Feb 21,2026</p>
+                        </div>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card cardbg mt-5 " style="width: 22rem;">
+                    <img src="assets/tech4.jfif" height="185px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class=" d-flex flex-row">
+                            <i class="fa-solid fa-book-open text-black mb-4"></i>:500
+                            <p class="ms-auto">Feb 21,2026</p>
+                        </div>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid herocont  mt-5">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h1 class=" text-center mt-5 text-white">Contact Us</h1>
+                <hr>
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Your First Name" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Your Last Name" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Message</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                                Submit
+                            </button>
+
+                </form>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="nav footer">
+        <div class="container">
+
+
+            <div class="row container-fluid heropgm text-center g-4 mb-5">
+                <div class="col-12 col-sm-4 d-flex flex-column align-items-center mb-5">
+                    <img src="assets/call.png" height="90" width="100" alt="">
+                    <p class="text-white mt-2 mb-0">03182867263</p>
+                </div>
+                <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+                    <img src="assets/mail.png" height="90" width="100" alt="">
+                    <p class="text-white mt-2 mb-5">support@yourgmail.com</p>
+                </div>
+                <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+                    <img src="assets/map.png" height="90" width="100" alt="">
+                    <p class="text-white mt-2 mb-5">Karachi, Pakistan</p>
+                </div>
+            </div>
+
+
+
+            <div class="row g-4 mt5">
+                <div class="col-6 col-sm-6 col-lg-2 d-flex flex-column gap-2">
+                    <a class="foot-link fw-bolder fs-5" href="#">Home</a>
+                    <a class="foot-link" href="#">Overview</a>
+                    <a class="foot-link" href="#">Features</a>
+                    <a class="foot-link" href="#">Pricing</a>
+                    <a class="foot-link" href="#">Updates</a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-2 d-flex flex-column gap-2">
+                    <a class="foot-link fw-bolder fs-5" href="#">About</a>
+                    <a class="foot-link" href="#">Our Story</a>
+                    <a class="foot-link" href="#">Mission</a>
+                    <a class="foot-link" href="#">Team</a>
+                    <a class="foot-link" href="#">Careers</a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-2 d-flex flex-column gap-2">
+                    <a class="foot-link fw-bolder fs-5" href="#">Contact</a>
+                    <a class="foot-link" href="#">Support</a>
+                    <a class="foot-link" href="#">FAQs</a>
+                    <a class="foot-link" href="#">Live Chat</a>
+                    <a class="foot-link" href="#">Feedback</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 offset-lg-1">
+                    <h6 class="text-white fw-bold fs-5 text-center">Subscribe</h6>
+                    <p class="text-white text-center">Get the latest news and updates</p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Enter Your Email" aria-label="Search">
+                        <button class="btn btn-info" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="border-white border-2 mt-4">
+            <p class="text-white">Copyright © All rights reserved | The template is made by <span id="name">Muhammad Tayyab</span></p>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        function black() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function white() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+    </script>
+</body>
+
+</html>
